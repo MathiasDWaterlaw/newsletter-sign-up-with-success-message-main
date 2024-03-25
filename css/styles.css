@@ -2,6 +2,8 @@
 
 :root {
     --Tomato: hsl(4, 100%, 67%);
+    --color-gradient3: #FF6A3D;
+    --color-gradient1: #ff5476;
 
     --Dark-Slate-Grey: hsl(234, 29%, 20%);
     --Charcoal-Grey: hsl(235, 18%, 26%);
@@ -35,7 +37,8 @@ body {
 main {
     display: flex;
     justify-content: space-between;
-    max-width: 64.8%;
+    width: 935px;
+    height: 645px;
     background-color: var(--White);
     padding: 1.5rem;
     border-radius: 35px;
@@ -63,19 +66,26 @@ main {
 h1 {
     font-weight: 700;
     font-size: 3.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 #info-container p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.6rem;
     line-height: 1.5rem;
 }
 
 li {
     list-style: none;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     margin-bottom: 0.5rem;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+.icon-list {
+    padding-top: 0.2rem;
+    /* border: 1px solid blue; */
 }
 
 li i {
@@ -112,9 +122,11 @@ input {
     border: 1px solid var(--Grey);
     padding: 1.2rem;
     font-size: 1rem;
+    cursor: pointer;
 }
 
-input:focus {
+input:focus,
+input:active {
     outline: solid 1px var(--Dark-Slate-Grey);
 }
 
@@ -126,15 +138,125 @@ button {
     background-color: var(--Dark-Slate-Grey);
     border: none;
     color: var(--White);
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 700;
-    padding: 1.2rem;
+    padding: 1.25rem;
 }
 
-img {
-    height: 100%;
+button:hover,
+button:active {
+    background: linear-gradient(to right, var(--color-gradient1)20%, var(--Tomato), var(--color-gradient3));
+    cursor: pointer;
+}
+
+#img-section {
+    width: 52.5%;
+    background-image: url('../assets/images/illustration-sign-up-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
 }
 
 .hidden {
     display: none;
+}
+
+@media (width < 1385px) {
+    main {
+        width: 835px;
+        height: 545px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+    }
+}
+
+@media (width < 1285px) {
+    main {
+        width: 735px;
+        height: 445px;
+    }
+
+    #left-section {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #info-container p {
+        margin-bottom: 1rem;
+        line-height: 1rem;
+        font-size: 0.8rem;
+    }
+
+    ul {
+        font-size: 0.8rem;
+    }
+
+    ul li i img {
+        width: 1.3rem;
+        aspect-ratio: 1/1;
+    }
+
+    #img-section {
+        width: 45%;
+        height: 100%;
+        background-size: contain;
+    }
+
+    input {
+        margin-bottom: 1rem;
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    button {
+        padding: 1rem;
+    }
+    
+}
+
+@media (width < 1080px) {
+    main {
+        width: 680px;
+    }
+
+    #info-container p {
+        margin-bottom: 1rem;
+        line-height: 1rem;
+        font-size: 0.65rem;
+    }
+
+    ul {
+        font-size: 0.65rem;
+    }
+
+    ul li i img {
+        width: 1rem;
+        aspect-ratio: 1/1;
+    }
+
+    li {
+        margin-bottom: 0.3rem;
+    }
+
+    input {
+        font-size: 0.65rem;
+    }
+
+    button {
+        font-size: 0.65rem;
+    }
+}
+
+@media (width < 780px) {
+    
 }
