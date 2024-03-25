@@ -157,6 +157,10 @@ button:active {
     background-position: right;
 }
 
+#mobile-hero-section {
+    display: none;
+}
+
 .hidden {
     display: none;
 }
@@ -273,12 +277,13 @@ button:active {
         min-height: 100vh;
         width: 100%;
         box-sizing: border-box;
+        background-color: var(--White);
     }
 
     main {
         border-radius: 0;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
+        flex-direction: column;
+        justify-content: flex-start;
         padding: 0;
         margin: 0;
         width: 100%;
@@ -287,10 +292,8 @@ button:active {
 
     #left-section {
         display: block;
-        padding: 0;
+        padding: 2rem 1.5rem;
         margin: 0;
-        /* height: 60%; */
-        /* border: 1px solid blue; */
     }
 
     #left-card {
@@ -298,16 +301,52 @@ button:active {
     }
 
     #img-section {
-        background-image: url('../assets/images/illustration-sign-up-mobile.svg');
-        background-size: cover;
-        background-position: top;
-        width: 100%;
-        aspect-ratio: 1/0.759;
-        /* border: 1px solid blue; */
+        display: none;
     }
 
-    p {
-        font-size: 1rem;
+    #mobile-hero-section {
+        display: block;
     }
-    
+
+    #mobile-hero-section img {
+        width: 100%;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    #info-container p {
+        font-size: 1rem;
+        margin-bottom: 1.6rem;
+        line-height: 1.5rem;
+    }
+
+    li {
+        font-size: 1rem;
+        display: flex;
+        align-items:unset;
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
+    }
+
+    ul li i img {
+        width: 1.5rem;
+    }
+
+    input {
+        margin-bottom: 1.5rem;
+        border: 1px solid var(--Grey);
+        padding: 1.2rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    button {
+        font-size: 0.9rem;
+        font-weight: 700;
+        padding: 1.25rem;
+    }
 }
