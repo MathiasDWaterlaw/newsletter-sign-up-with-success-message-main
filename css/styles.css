@@ -162,6 +162,8 @@ button:active {
 }
 
 @media (width < 1385px) {
+
+    /* MAIN CARD */
     main {
         width: 835px;
         height: 545px;
@@ -177,6 +179,8 @@ button:active {
 }
 
 @media (width < 1285px) {
+
+    /* MAIN CARD */
     main {
         width: 735px;
         height: 445px;
@@ -208,7 +212,6 @@ button:active {
 
     #img-section {
         width: 45%;
-        height: 100%;
         background-size: contain;
     }
 
@@ -225,6 +228,8 @@ button:active {
 }
 
 @media (width < 1080px) {
+    
+    /* MAIN CARD */
     main {
         width: 680px;
     }
@@ -257,6 +262,52 @@ button:active {
     }
 }
 
-@media (width < 780px) {
+@media (width < 680px) {
+
+    /* MAIN CARD */
+
+    body {
+        display: block;
+        padding: 0;
+        margin: 0;
+        min-height: 100vh;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    main {
+        border-radius: 0;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    #left-section {
+        display: block;
+        padding: 0;
+        margin: 0;
+        /* height: 60%; */
+        /* border: 1px solid blue; */
+    }
+
+    #left-card {
+        padding: 0;
+    }
+
+    #img-section {
+        background-image: url('../assets/images/illustration-sign-up-mobile.svg');
+        background-size: cover;
+        background-position: top;
+        width: 100%;
+        aspect-ratio: 1/0.759;
+        /* border: 1px solid blue; */
+    }
+
+    p {
+        font-size: 1rem;
+    }
     
 }
