@@ -21,7 +21,7 @@
 <body>
 
   <!-- Sign-up form start -->
-  <main>
+  <main class="shadow hidden">
 
     <div id="mobile-hero-section">
       <img src="./assets/images/illustration-sign-up-mobile.svg" alt="mobile hero">
@@ -63,14 +63,16 @@
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-<div id="success-msg" class="hidden">
+<div id="success-card" class="shadow">
 
-  Thanks for subscribing!
+  <!-- <div id="major-container"></div> -->
+  <img src="./assets/images/icon-success.svg" alt="">
+  <h1>Thanks for subscribing!</h1>
   
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
+  <p>A confirmation email has been sent to <span class="bold">ash@loremcompany.com</span>.
+    Please open it and click the button inside to confirm your subscription.</p>
   
-  Dismiss message
+  <button id="dismiss-btn" class="btn same-size">Dismiss message</button>
   
 </div>
   <!-- Success message end -->

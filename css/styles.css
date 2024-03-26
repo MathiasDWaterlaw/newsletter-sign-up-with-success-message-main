@@ -1,5 +1,4 @@
 
-
 :root {
     --Tomato: hsl(4, 100%, 67%);
     --color-gradient3: #FF6A3D;
@@ -9,7 +8,6 @@
     --Charcoal-Grey: hsl(235, 18%, 26%);
     --Grey: hsla(231, 7%, 60%, 0.7);
     --White: hsl(0, 0%, 100%);
-
 }
 
 *,
@@ -49,17 +47,13 @@ main {
     align-items: center;
     justify-content: center;
     padding: 2.7rem;
-
-    /* border: 1px solid black; */
 }
 
 #left-card {
-    /* border: 1px solid black; */
     padding: 0 1rem 0.5rem 0;
 }
 
 #info-container {
-    /* border: 1px solid red; */
     margin-bottom: 2rem;
 }
 
@@ -80,12 +74,10 @@ li {
     align-items: center;
     margin-bottom: 0.5rem;
     padding: 0;
-    /* border: 1px solid red; */
 }
 
 .icon-list {
     padding-top: 0.2rem;
-    /* border: 1px solid blue; */
 }
 
 li i {
@@ -95,7 +87,6 @@ li i {
 #input-container {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid blue; */
 }
 
 #flex-container {
@@ -147,6 +138,7 @@ button:hover,
 button:active {
     background: linear-gradient(to right, var(--color-gradient1)20%, var(--Tomato), var(--color-gradient3));
     cursor: pointer;
+    box-shadow: 0 15px 25px 5px hsla(4, 100%, 67%, 0.4);
 }
 
 #img-section {
@@ -159,6 +151,38 @@ button:active {
 
 #mobile-hero-section {
     display: none;
+}
+
+/* SUCCESS CARD */
+
+#success-card {
+    background-color: var(--White);
+    padding: 4rem;
+    width: 505px;
+    padding-top: 3rem;
+    border-radius: 35px;
+}
+
+#success-card img {
+    margin-bottom: 2.5rem;
+}
+
+#success-card h1 {
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#success-card p {
+    margin-bottom: 2.5rem;
+    line-height: 1.5rem;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.shadow {
+    box-shadow: 0 5px 25px 15px hsla(0, 0%, 0%, 0.2);
 }
 
 .hidden {
@@ -348,5 +372,33 @@ button:active {
         font-size: 0.9rem;
         font-weight: 700;
         padding: 1.25rem;
+    }
+
+    .shadow {
+        box-shadow: 0 0 0 0;
+    }
+
+    /* SUCCESS CARD */
+
+    #success-card {
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+        padding: 1.5rem;
+        position: relative;
+    }
+
+    #success-card img{
+        margin-top: 8rem;
+    }
+
+    #success-card h1 {
+        line-height: 2.5rem;
+    }
+
+    #success-card button {
+        width: 87%;
+        position: absolute;
+        bottom: 2.5rem;
     }
 }
