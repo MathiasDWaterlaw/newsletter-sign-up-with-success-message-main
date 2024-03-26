@@ -2,10 +2,8 @@ const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+")
 
 const mainCard = document.getElementById('main-card');
 const successCard = document.getElementById('success-card');
-
 const emailInput = document.getElementById('email-input');
 const submitButton =document.getElementById('submit-btn');
-
 const invalidMsg = document.getElementById('invalid-msg');
 
 function wrongMail() {
